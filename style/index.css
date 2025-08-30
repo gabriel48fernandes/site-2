@@ -1,60 +1,145 @@
-body {
-    margin: 0;
-    padding: 0;
+* {
+    margin-bottom: 0px;
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    font-family: "Arsenal", sans-serif;
 
-  
 }
 
 
-.menu{
+.menu {
     height: 100px;
     background-color: #112244;
     display: flex;
     align-items: center;
-    
-    
-    
 
 
 }
 
-ul{
+ul {
     display: flex;
     list-style: none;
-  
-    
-   
+
 
 }
 
-li{
+li {
     padding-right: 25%
-    
-
 }
 
-a{
+a {
     text-decoration: none;
     color: white;
-    font-weight: 100;
+    font-weight: 400;
     font-size: 20px;
 
- 
+
 }
 
-li :hover{
+li :hover {
     color: orange;
     border-bottom: 3px solid orange;
     padding-bottom: 30px;
-    
+
 }
-img{
+
+.menu img {
     height: 50%;
     margin-left: 17%;
     margin-right: 5%;
 }
-#atual{
+
+#atual {
     color: orange;
     border-bottom: 3px solid orange;
     padding-bottom: 30px;
+}
+
+.wallpaper {
+    position: relative;
+
+
+
+}
+
+.wallpaper img {
+    width: 100%;
+
+}
+
+.wallpaper p {
+
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    font-size: 3vw;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.buttons {
+    position: absolute;
+    bottom: 10%;
+    left: 10%;
+    display: flex;
+    gap: 20px;
+}
+
+.button {
+    background: #FF7B00;
+    color: #112244;
+    padding: 12px 24px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.button:hover {
+    background: #112244;
+    color: #ffffff;
+}
+
+.candidato {
+    display: flex;
+
+    gap: 5%;
+
+
+}
+
+.candidato img {
+   
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    width: 20%;
+    height: 20;
+    margin-top: 3%;
+    margin-left: 12%;
+}
+
+.infos {
+    width: 50%;
+    margin-top: 5%;
+    
+
+}
+
+.infos h3 {
+
+    color: #FF7B00;
+}
+
+.infos h1 {
+    color: #112244;
+    font-weight: 700;
+    font-size: 2vw;
+    margin-bottom: 2%;
+}
+
+.infos p {
+    font-size: 1.5vw;
+    color: #112244;
+    line-height: 1.5;
 }
