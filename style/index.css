@@ -1,79 +1,62 @@
-* {
-    margin-bottom: 0px;
-    margin-top: 0px;
-    margin-left: 0px;
-    margin-right: 0px;
+*{
+	margin-bottom: 0px;
+	margin-top: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
     font-family: "Arsenal", sans-serif;
-
 }
-
 
 .menu {
     height: 100px;
     background-color: #112244;
     display: flex;
     align-items: center;
-
-
 }
 
 ul {
     display: flex;
     list-style: none;
-
-
 }
 
 li {
-    padding-right: 25%
+    padding-right: 25%;
 }
 
 a {
     text-decoration: none;
-    color: white;
+    color: #ffffff;
     font-weight: 400;
-    font-size: 20px;
-
-
+    font-size: 1.3vw;
 }
 
 li :hover {
-    color: orange;
-    border-bottom: 3px solid orange;
-    padding-bottom: 30px;
-
+    color: #FF7B00;
+    border-bottom: 3px solid #FF7B00;
+    padding-bottom: 20px;
 }
 
 .menu img {
     height: 50%;
-    margin-left: 17%;
-    margin-right: 5%;
+    margin-left: 10%;
+    margin-right: 15%;
 }
 
 #atual {
-    color: orange;
-    border-bottom: 3px solid orange;
-    padding-bottom: 30px;
+    color: #FF7B00;
 }
 
 .wallpaper {
     position: relative;
-
-
-
 }
 
 .wallpaper img {
     width: 100%;
-
 }
 
 .wallpaper p {
-
     position: absolute;
     top: 20%;
     left: 10%;
-    margin-right: 70%;
     font-size: 3vw;
     font-weight: 700;
     color: #ffffff;
@@ -104,71 +87,19 @@ li :hover {
 
 .candidato {
     display: flex;
-
-    gap: 5%;
-
-
 }
 
 .candidato img {
-   
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
-    width: 20%;
-    height: 20;
+    width: 25%;
     margin-top: 3%;
-    margin-left: 12%;
+    margin-left: 10%;
 }
 
 .infos {
-    width: 50%;
-    margin-top: 5%;
-    
-
-}
-
-.infos h3, .faixa_esquerda h3 {
-    color: #FF7B00;
-}
-
-.infos h1, .faixa_esquerda h1 {
-    color: #112244;
-    font-weight: 700;
-    font-size: 2vw;
-    margin-bottom: 2%;
-}
-
-.infos p, .faixa_esquerda p {
-    font-size: 1.5vw;
-    color: #112244;
-    line-height: 1.5;
-}
-
-.trajetoria {
-    display: flex;
-}
-
-.faixa_esquerda{
-    width: 45%;
-    padding-top: 5%;
-    padding-left: 10%;
-}
-
-
-.accordeons {
-    width: 55%;
-    padding-left: 5%;
-    padding-right: 10%;
-    padding-top: 5%;
-}
-
-details {
-  width: 100%; 
-  margin: 3%;
-  border: 2px solid #FF7B00;
-  border-radius: 8px;
-  background-color: #ff7b0035;
-  overflow: hidden;
+    margin: 3%;
+    margin-right: 10%;
 }
 
 .infos h3, .faixa_esquerda h3 {
@@ -227,29 +158,27 @@ summary {
 summary:hover {
   background-color: #112244;
   color: #ffffff;
-  border-color: #112244;
 }
 
-details[open] summary {
-  border-bottom: 2px solid white;
-}
-
-details p, details div {
+details p{
   padding: 12px;
   background-color: #fffaf5;
   color: #000000;
 }
 
 .valores {
+    display: flex;
+    flex-direction: column;
     background-color: #112244;
     margin-top: 5%;
     padding-top: 3%;
     text-align: center;
+    align-items: center;
 }
 
 .valores h3 {
     color: #FF7B00;
-    padding-bottom: 2%;
+    padding-bottom: 1%;
 }
 
 .valores h1 {
@@ -262,48 +191,60 @@ details p, details div {
     color: #ffffff;
     width: 80%;
     font-size: 1.5vw;
-    margin-left: 10%;
     line-height: 1.5;
 }
 
-summary:hover {
-  background-color: #112244;
-  color: #ffffff;
-  border-color: #112244;
-}
-
-details[open] summary {
-  border-bottom: 2px solid white;
-}
-
-details p, details div {
-  padding: 12px;
-  background-color: #fffaf5;
-  color: #000000;
-}
-
-.valores {
-    background-color: #112244;
-    margin-top: 5%;
-    padding-top: 3%;
-    text-align: center;
-}
-
-.valores h3 {
-    color: #FF7B00;
-    padding-bottom: 2%;
-}
-
-.valores h1 {
-    color: #ffffff;
-    font-size: 2.5vw;
-    padding-bottom: 2%;
-}
-
-.valores p {
-    color: #ffffff;
+.cards {
+    display: flex;
+    flex-wrap: wrap;
     width: 80%;
-    font-size: 1.5vw;
-    margin-left: 10%;
-    line-height: 1.5;
+    margin: 3% auto;
+    gap: 3%;
+}
+
+.card { 
+    flex: 1 1 calc(33.33% - 3%);
+    background-color: #ffffff;
+    border-radius: 8px;
+    text-align: left;
+    padding: 1.5%;
+    box-sizing: border-box;
+    margin-bottom: 3%;
+}
+
+.cards :hover {
+    background-color: #ffcc00;
+    transition: 0.3s;
+    scale: 1.05;
+}
+
+#card_icon {
+    width: 10%;
+    padding-bottom: 2%;
+}
+
+#card_title {
+    color:#112244;
+    padding-bottom: 2%;
+}
+
+#card_paragraph {
+    color: #112244;
+    font-size: 1vw;
+}
+
+.footer_links {
+    background-color: rgb(240, 247, 154);
+    height: 50px;
+}
+
+.footer_redes_sociais {
+    background-color: rgb(144, 252, 122);
+    display: flex;
+    justify-content: center;
+    gap: 3%;
+}
+
+.footer_redes_sociais img {
+    width: 3%;
 }
