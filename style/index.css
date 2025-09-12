@@ -5,6 +5,17 @@
 	margin-right: 0px;
     font-family: "Arsenal", sans-serif;
 }
+#menu-toggle {
+    display: none;
+}
+.hamburger {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #fff;
+    margin-right: 20px;
+    margin-left: auto;
+}
 
 .menu {
     height: 100px;
@@ -247,4 +258,133 @@ details p{
 
 .footer_redes_sociais img {
     width: 3%;
+}
+
+@media (max-width: 1024px) {
+    .menu {
+        height: 75px;
+    }
+
+    .menu a {
+        font-size: 1.8vw;
+    }
+
+    .button {
+        padding: 8px 16px;
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 768px) {
+    .menu {
+        height: 75px;
+    }
+
+    .menu a {
+        font-size: 1.8vw;
+    }
+
+    .button {
+        padding: 8px 16px;
+        font-size: 12px;
+    }
+
+    #card_title {
+        font-size: 2.0vw;
+    }
+
+    #card_paragraph {
+        font-size: 1.5vw;
+    }
+
+    .footer_redes_sociais {
+        gap: 3%;
+    }
+
+    .footer_redes_sociais img {
+        width: 2%;
+        margin-top: 2%;
+        margin-bottom: 2%;
+    }
+
+    .footer_social h3 {
+        color: #112244;
+        padding-top: 2%;
+    }
+
+    .footer_social p {
+        color: #112244;
+    }
+}
+
+@media (max-width: 425px) {
+    .hamburger {
+        display: block; /* mostra o botão */
+    }
+
+    .menu {
+        position: relative;
+    }
+
+    .menu ul {
+        display: none;
+        flex-direction: column;
+        background-color: #112244;
+        position: absolute;
+        top: 75px;
+        right: 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    .menu li {
+        padding: 20px 0;
+    }
+
+    .menu a {
+        font-size: 5vw;
+    }
+
+
+    #menu-toggle:checked + .hamburger + ul {
+        display: flex;
+    }
+
+
+
+    .button {
+        padding: 8px 16px;
+        font-size: 8px;
+    }
+
+    .trajetoria {
+        flex-direction: column;
+    }
+
+    .faixa_esquerda{
+        width: 80%; 
+    }
+
+    .accordeons {
+        width: 80%;
+        padding-left: 7%;
+    }
+
+    .faixa_esquerda h1 {
+        font-size: 3.5vw;
+    }
+
+    .faixa_esquerda p {
+        font-size: 2.5vw;
+    }
+
+    summary {
+        padding: 8px;
+        font-size: 12px;
+    }
+
+    details p{
+        padding: 8px;
+        font-size: 12px;
+    }
 }
