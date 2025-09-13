@@ -81,6 +81,7 @@ li :hover {
     font-size: 3vw;
     font-weight: 700;
     color: #ffffff;
+    z-index: 2;
 }
 
 .buttons {
@@ -89,6 +90,7 @@ li :hover {
     left: 10%;
     display: flex;
     gap: 20px;
+    z-index: 3;
 }
 
 .button {
