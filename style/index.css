@@ -343,12 +343,6 @@ details p{
         text-align: center;
     }
 
-    .candidato img, .infos {
-        order: initial;
-        width: 80%;
-        margin: 0 auto;
-    }
-
     .infos h1 {
         font-size: 5vw;
     }
