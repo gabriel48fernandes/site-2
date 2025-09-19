@@ -313,7 +313,7 @@ details p{
 }
 
 /* Media Queries */
-@media (max-width: 768px) {
+@media (max-width: 450px) {
     .menu ul {
         display: none;
         flex-direction: column;
