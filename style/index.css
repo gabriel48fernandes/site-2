@@ -313,7 +313,7 @@ details p{
 }
 
 /* Media Queries */
-@media (max-width: 768px) {
+@media (max-width: 425px) {
     .menu ul {
         display: none;
         flex-direction: column;
@@ -323,6 +323,7 @@ details p{
         background-color: #112244;
         width: 100%;
     }
+    
 
     .menu li {
         padding: 15px 0;
