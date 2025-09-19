@@ -313,7 +313,7 @@ details p{
 }
 
 /* Media Queries */
-@media (max-width: 425px) {
+@media (max-width: 768px) {
     .menu ul {
         display: none;
         flex-direction: column;
@@ -354,7 +354,7 @@ details p{
 
     .trajetoria {
         flex-direction: column;
-        text-align: center;
+     
     }
 
     .faixa_esquerda, .accordeons {
