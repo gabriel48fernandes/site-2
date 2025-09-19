@@ -323,10 +323,12 @@ details p{
         background-color: #112244;
         width: 100%;
     }
-    
+    .menu a {
+        font-size: 4vw;
+    }
 
     .menu li {
-        padding: 15px 0;
+        padding: 20px 0;
         text-align: center;
         border-bottom: 1px solid #ffffff;
     }
@@ -354,7 +356,7 @@ details p{
 
     .trajetoria {
         flex-direction: column;
-     
+        text-align: center;
     }
 
     .faixa_esquerda, .accordeons {
