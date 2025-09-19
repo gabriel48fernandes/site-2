@@ -333,10 +333,10 @@ details p{
         border-bottom: 1px solid #ffffff;
     }
     .button {
-        font-size: 1.5vw;
+        font-size: 2.5vw;
         padding: 10px 20px;
     }
-
+   
     .hamburger {
         display: block;
     }
