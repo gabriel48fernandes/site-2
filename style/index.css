@@ -17,6 +17,7 @@
     color: #fff;
     margin-right: 20px;
     margin-left: auto;
+ 
 }
 
 .menu {
@@ -322,6 +323,7 @@ details p{
         right: 0;
         background-color: #112244;
         width: 100%;
+        
     }
     .menu a {
         font-size: 4vw;
@@ -339,10 +341,12 @@ details p{
    
     .hamburger {
         display: block;
+        
     }
 
     #menu-toggle:checked + .hamburger + ul {
         display: flex;
+    
     }
 
     .candidato {
