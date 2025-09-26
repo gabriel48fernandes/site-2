@@ -45,14 +45,14 @@
     font-size: 1.3vw;
 }
 
-li :hover {
+.menu li :hover {
     color: #FF7B00;
     border-bottom: 3px solid #FF7B00;
     padding-bottom: 20px;
 }
 
 .menu img {
-    height: 50%;
+    height: 80%;
     margin-left: 10%;
     margin-right: 15%;
 }
@@ -60,6 +60,210 @@ li :hover {
 #atual {
     color: #FF7B00;
 }
+
+/* sessão candidato */
+
+.candidato {
+    display: flex;
+}
+
+.foto {
+    width: 35%;
+    margin-left: 10%;
+    margin-top: 3%;
+}
+
+.foto img {
+    width: 80%;
+    border-radius: 8px 8px 0px 0px;
+}
+
+.infos {
+    width: 65%;
+    margin-right: 10%;
+    margin-top: 3%;
+}
+
+.conteudo p {
+    font-size: 1.2vw;
+}
+
+.ancoras {
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+
+.ancoras a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1.2vw;
+    padding: 8px 16px;
+    background-color: #112244;
+    border-radius: 8px;
+
+}
+
+.ancoras a:hover {
+    background-color: #FF7B00;
+    color: #000000;
+    transition: 0.5s;
+}
+
+.dados-gerais li {
+    font-size: 1.2vw;
+}
+
+.candidato h2 {
+    color: #FF7B00;
+}
+
+.candidato h1 {
+    color: #112244;
+    font-weight: 700;
+    font-size: 2vw;
+    margin-bottom: 2%;
+}
+
+.dados-gerais {
+    padding-bottom: 3%;
+}
+
+/* sessão trajeória */
+  .trajetoria-politica {
+    background-color: #112244;
+    padding-bottom: 1%;
+    padding-top: 3%;
+  }
+
+  .trajetoria-politica h2 {
+    color: #FF7B00;
+    margin-left: 10%;
+  }
+
+  .trajetoria-politica p {
+    color: #ffffff;
+    font-size: 1.2vw;
+    margin-left: 10%;
+    width: 80%;
+    line-height: 1.8;
+
+  }
+
+/* sessão propostas */
+.propostas{
+    background-color: #112244;
+    padding-bottom: 3%;
+    padding-top: 3%;
+  }
+
+
+.propostas h2 {
+    color: #FF7B00;
+    margin-left: 10%;
+}
+
+.propostas h3 {
+    color: #ffffff;
+    margin-left: 10%;
+    padding-top: 1.5%;
+}
+
+.propostas p {
+color: #ffffff;
+font-size: 1.2vw;
+margin-top: 1%;
+margin-left: 10%;
+padding-bottom: 2.5%;
+width: 80%;
+}
+
+/* sessão contato */
+.contato {
+    background-color: #112244;
+    padding-top: 3%;
+    padding-bottom: 3%;
+
+}
+
+#endereco {
+    margin-left: 10%;
+}
+
+#endereco h2{
+    margin-bottom: 1%;
+}
+
+  iframe {
+    margin-left: 10%;
+    margin-top: 2%;
+    border: 3px solid white;
+    border-radius: 15px;
+    box-shadow: 0px 4px 12px #ffffff;
+  }
+
+  .contato h2 {
+    color: #FF7B00;
+  }
+
+  .contato p {
+    color: #ffffff;
+    font-size: 1.2vw;
+    line-height: 1.8;
+
+  }
+
+  /* sessão feitos e valores */
+  .feitos h2, .valores h2 {
+    color: #FF7B00;
+    margin-left: 10%;
+    margin-top: 3%;
+  }
+
+  .valores ul{
+    padding-bottom: 3%;
+  }
+
+  .valores p, .valores ul {
+    margin-left: 10%;
+    font-size: 1.2vw;
+    line-height: 1.8;
+
+  }
+
+  .feitos ol {
+    margin-left: 10%;
+    font-size: 1.2vw;
+    line-height: 1.8;
+  }
+
+
+/* CSS para o footer */
+.footer_social {
+    text-align: center;
+    margin-bottom: 2%;
+}
+
+.footer_redes_sociais {
+    display: flex;
+    justify-content: center;
+    gap: 3%;
+}
+
+.footer_redes_sociais img {
+    width: 2%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.footer_social h3 {
+    color: #112244;
+    padding-top: 2%;
+}
+
+.footer_social p {
+    color: #112244;
+}
+
 
 /* Media Queries */
 @media (max-width: 450px) {
@@ -95,66 +299,4 @@ li :hover {
     #menu-toggle:checked + .hamburger + ul {
         display: flex;
     
-    }
-
-    .candidato {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .infos h1 {
-        font-size: 5vw;
-    }
-
-    .infos p {
-        font-size: 3vw;
-    }
-
-    .trajetoria {
-        flex-direction: column;
-        text-align: left;
-    }
-
-    .faixa_esquerda, .accordeons {
-        width: 90%;
-        padding: 0;
-        margin: 0 auto;
-    }
-
-    .faixa_esquerda h1 {
-        font-size: 5vw;
-    }
-
-    .faixa_esquerda p {
-        font-size: 3vw;
-    }
-
-    details p{
-      font-size: 3vw;
-    }
-
-    .valores h1 {
-        font-size: 5vw;
-    }
-
-    .valores p {
-        font-size: 3vw;
-    }
-
-    .card { 
-        flex: 1 1 calc(100% - 3%);
-        max-height: none;
-    }
-
-    #card_title {
-        font-size: 4vw;
-    }
-
-    #card_paragraph {
-        font-size: 3vw;
-    }
-
-    .footer_redes_sociais img {
-        width: 5%;
-    }
-}
+    }}
