@@ -60,3 +60,101 @@ li :hover {
 #atual {
     color: #FF7B00;
 }
+
+/* Media Queries */
+@media (max-width: 450px) {
+    .menu ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        background-color: #112244;
+        width: 100%;
+        
+    }
+    .menu a {
+        font-size: 4vw;
+    }
+
+    .menu li {
+        padding: 20px 0;
+        text-align: center;
+        border-bottom: 1px solid #ffffff;
+    }
+    .button {
+        font-size: 2.5vw;
+        padding: 10px 20px;
+    }
+   
+    .hamburger {
+        display: block;
+        
+    }
+
+    #menu-toggle:checked + .hamburger + ul {
+        display: flex;
+    
+    }
+
+    .candidato {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .infos h1 {
+        font-size: 5vw;
+    }
+
+    .infos p {
+        font-size: 3vw;
+    }
+
+    .trajetoria {
+        flex-direction: column;
+        text-align: left;
+    }
+
+    .faixa_esquerda, .accordeons {
+        width: 90%;
+        padding: 0;
+        margin: 0 auto;
+    }
+
+    .faixa_esquerda h1 {
+        font-size: 5vw;
+    }
+
+    .faixa_esquerda p {
+        font-size: 3vw;
+    }
+
+    details p{
+      font-size: 3vw;
+    }
+
+    .valores h1 {
+        font-size: 5vw;
+    }
+
+    .valores p {
+        font-size: 3vw;
+    }
+
+    .card { 
+        flex: 1 1 calc(100% - 3%);
+        max-height: none;
+    }
+
+    #card_title {
+        font-size: 4vw;
+    }
+
+    #card_paragraph {
+        font-size: 3vw;
+    }
+
+    .footer_redes_sociais img {
+        width: 5%;
+    }
+}
