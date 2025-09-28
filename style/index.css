@@ -166,6 +166,11 @@ li :hover {
 .trajetoria {
     display: flex;
 }
+.trajetoria p{
+    font-size: 1.5vw;
+    color: #112244;
+    line-height: 1.5;
+}
 
 .faixa_esquerda{
     width: 55%;
@@ -323,7 +328,6 @@ details p{
         right: 0;
         background-color: #112244;
         width: 100%;
-        
     }
     .menu a {
         font-size: 4vw;
@@ -341,16 +345,15 @@ details p{
    
     .hamburger {
         display: block;
-        
     }
 
     #menu-toggle:checked + .hamburger + ul {
         display: flex;
-    
     }
 
     .candidato {
         flex-direction: column;
+        align-items: center;
         text-align: center;
     }
 
@@ -359,26 +362,51 @@ details p{
     }
 
     .infos p {
-        font-size: 3vw;
+        font-size: 4vw;
+        text-align: left;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    .candidato img {
+       width: 50%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .trajetoria {
         flex-direction: column;
+        text-align: left; 
+    }
+    .trajetoria h1 {
+        font-size: 5vw;
+    }
+    .trajetoria p {
+        font-size: 4vw;
         text-align: left;
+        margin-left: 10%;
+        margin-right: 10%;
     }
 
     .faixa_esquerda, .accordeons {
         width: 90%;
-        padding: 0;
-        margin: 0 auto;
+        text-align: center;
     }
 
     .faixa_esquerda h1 {
         font-size: 5vw;
+        text-align: center;
+    }
+    .faixa_esquerda h3 {
+        font-size: 4vw;
+        text-align: center;
     }
 
     .faixa_esquerda p {
-        font-size: 3vw;
+        font-size: 4vw;
+        text-align: left;
+        margin-left: 0%;
+        margin-right: 10%;
     }
 
     details p{
