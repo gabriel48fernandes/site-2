@@ -150,25 +150,25 @@
   }
 
 /* sessão propostas */
-.propostas{
+#propostas{
     background-color: #112244;
     padding-bottom: 3%;
     padding-top: 3%;
   }
 
 
-.propostas h2 {
+#propostas h2 {
     color: #FF7B00;
     margin-left: 10%;
 }
 
-.propostas h3 {
+#propostas h3 {
     color: #ffffff;
     margin-left: 10%;
     padding-top: 1.5%;
 }
 
-.propostas p {
+#propostas p {
 color: #ffffff;
 font-size: 1.2vw;
 margin-top: 1%;
@@ -292,6 +292,16 @@ width: 80%;
     .conteudo p {
         font-size: 4vw;
     }
+    .conteudo h1 {
+        font-size: 6vw;
+    }
+    .ancoras a {
+        font-size: 2.5vw;
+        padding: 10px 20px;
+    }
+    .dados-gerais li {
+        font-size: 3vw;
+    }
     .menu ul {
         display: none;
         flex-direction: column;
@@ -309,10 +319,7 @@ width: 80%;
         text-align: center;
         border-bottom: 1px solid #ffffff;
     }
-    .button {
-        font-size: 2.5vw;
-        padding: 10px 20px;
-    }
+  
     .hamburger {
         display: block;
     }
