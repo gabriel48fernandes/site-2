@@ -1,8 +1,8 @@
-*{
-	margin-bottom: 0px;
-	margin-top: 0px;
-	margin-left: 0px;
-	margin-right: 0px;
+* {
+    margin-bottom: 0px;
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
     font-family: "Arsenal", sans-serif;
 }
 
@@ -68,9 +68,9 @@
 }
 
 .foto {
-    width: 35%;
+    width: 45%;
     margin-left: 10%;
-    margin-top: 3%;
+    margin-top: 4%;
 }
 
 .foto img {
@@ -110,7 +110,8 @@
 }
 
 .dados-gerais li {
-    font-size: 1.2vw;
+    font-size: 1vw;
+   
 }
 
 .candidato h2 {
@@ -126,55 +127,61 @@
 
 .dados-gerais {
     padding-bottom: 3%;
+    font-size: 1.2vw;
 }
 
 /* sessão trajeória */
-  .trajetoria-politica {
+.trajetoria-politica {
     background-color: #112244;
     padding-bottom: 1%;
     padding-top: 3%;
-  }
+}
 
-  .trajetoria-politica h2 {
+.trajetoria-politica h2 {
     color: #FF7B00;
     margin-left: 10%;
-  }
+    font-size: 2vw;
+}
 
-  .trajetoria-politica p {
+.trajetoria-politica p {
     color: #ffffff;
-    font-size: 1.2vw;
+    font-style: italic;
+    font-size: 1.5vw;
     margin-left: 10%;
     width: 80%;
     line-height: 1.8;
+    text-align: left;
 
-  }
+
+}
 
 /* sessão propostas */
-#propostas{
+#propostas {
     background-color: #112244;
     padding-bottom: 3%;
     padding-top: 3%;
-  }
+}
 
 
 #propostas h2 {
     color: #FF7B00;
     margin-left: 10%;
+    font-size: 2vw;
 }
 
 #propostas h3 {
-    color: #ffffff;
+    color: #f3b46b;
     margin-left: 10%;
     padding-top: 1.5%;
 }
 
 #propostas p {
-color: #ffffff;
-font-size: 1.2vw;
-margin-top: 1%;
-margin-left: 10%;
-padding-bottom: 2.5%;
-width: 80%;
+    color: #ffffff;
+    font-style: italic;
+    font-size: 1.5vw;
+    margin-left: 10%;
+    width: 80%;
+    line-height: 1.8;
 }
 
 /* sessão contato */
@@ -189,52 +196,56 @@ width: 80%;
     margin-left: 10%;
 }
 
-#endereco h2{
+#endereco h2 {
     margin-bottom: 1%;
 }
 
-  iframe {
+iframe {
     margin-left: 10%;
     margin-top: 2%;
     border: 3px solid white;
     border-radius: 15px;
     box-shadow: 0px 4px 12px #ffffff;
-  }
+}
 
-  .contato h2 {
+.contato h2 {
     color: #FF7B00;
-  }
+}
 
-  .contato p {
+.contato p {
     color: #ffffff;
     font-size: 1.2vw;
     line-height: 1.8;
 
-  }
+}
 
-  /* sessão feitos e valores */
-  .feitos h2, .valores h2 {
+/* sessão feitos e valores */
+.feitos h2,
+.valores h2 {
     color: #FF7B00;
     margin-left: 10%;
     margin-top: 3%;
-  }
+}
 
-  .valores ul{
+.valores ul {
     padding-bottom: 3%;
-  }
+}
 
-  .valores p, .valores ul {
+.valores p,
+.valores ul {
     margin-left: 10%;
     font-size: 1.2vw;
     line-height: 1.8;
+    font-style: italic;
 
-  }
+}
 
-  .feitos ol {
+.feitos ol {
     margin-left: 10%;
     font-size: 1.2vw;
     line-height: 1.8;
-  }
+    font-style: italic;
+}
 
 
 /* CSS para o footer */
@@ -272,36 +283,81 @@ width: 80%;
         align-items: center;
         text-align: center;
     }
+
     .foto {
         width: 80%;
         margin-left: auto;
         margin-right: auto;
         margin-top: 5%;
     }
+
     .foto img {
         width: 100%;
         display: block;
         margin-left: auto;
         margin-right: auto;
     }
+
     .infos {
         width: 90%;
         margin: 0 auto;
         margin-top: 5%;
     }
+
     .conteudo p {
         font-size: 4vw;
+        text-align: left;
     }
+
     .conteudo h1 {
         font-size: 6vw;
     }
+
     .ancoras a {
         font-size: 2.5vw;
         padding: 10px 20px;
     }
-    .dados-gerais li {
+    .dados-gerais h2 {
+        font-size: 5vw;
+    }
+
+    .dados-gerais ul {
+        font-size: 4vw;
+        font-style: italic;
+        text-align: left;
+     
+    }
+    .trajetoria-politica h2 {
+        font-size: 5vw;
+    }
+    .trajetoria-politica p {
+        font-size: 4vw;
+    }
+    #propostas h2 {
+        font-size: 5vw;
+    }
+    #propostas h3 {
+        font-size: 4vw;
+    }
+    #propostas p {
+        font-size: 4vw;
+    }
+    .feitos h2,
+    .valores h2 {
+        font-size: 5vw;
+    }
+    .valores p,
+    .valores ul {
+        font-size: 4vw;
+    }
+    .feitos ol {
+        font-size: 4vw;
+        margin-top: 10px;
+    }
+    .contato p {
         font-size: 3vw;
     }
+
     .menu ul {
         display: none;
         flex-direction: column;
@@ -311,21 +367,25 @@ width: 80%;
         background-color: #112244;
         width: 100%;
     }
+
     .menu a {
         font-size: 4vw;
     }
+
     .menu li {
         padding: 20px 0;
         text-align: center;
         border-bottom: 1px solid #ffffff;
     }
-  
+
     .hamburger {
         display: block;
     }
-    #menu-toggle:checked + .hamburger + ul {
+
+    #menu-toggle:checked+.hamburger+ul {
         display: flex;
     }
+
     .footer_social img {
         width: 8%;
     }
