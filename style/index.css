@@ -363,9 +363,9 @@ details p{
 
     .infos p {
         font-size: 4vw;
-        text-align: center;
+        text-align: justify;
         margin-left: 10%;
-        margin-right: 10%;
+        margin-right: 0%;
     }
     .candidato img {
        width: 50%;
@@ -383,7 +383,7 @@ details p{
     }
     .trajetoria p {
         font-size: 4vw;
-        text-align: center;
+        text-align: left;
         margin-left: 10%;
         margin-right: 10%;
     }
@@ -404,7 +404,7 @@ details p{
 
     .faixa_esquerda p {
         font-size: 4vw;
-        text-align: left;
+        text-align: justify;
         margin-left: 0%;
         margin-right: 10%;
     }
