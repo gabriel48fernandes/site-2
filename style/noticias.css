@@ -63,52 +63,86 @@ li :hover {
 
 
 
+/* === ESTILO NOTÍCIAS === */
 .noticias {
-
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-    padding: 20px;
-    margin-left: 10%;
-    margin-right: 10%;
-    text-align: center;
-    margin-top: 5%;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 20px;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 5%;
 }
 
-
-
-.bloco-um {
-    display: flex;
-    width: 100%;
-    gap: 5%;
-}
-
+.bloco-um,
 .bloco-dois {
-    display: flex;
-    width: 100%;
-    gap: 5%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
 }
 
-.bloco-um  {
-    width: 100%;
-   
-    border-radius: 10px;
-  
-
+/* Cada notícia vira um card */
+figure {
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
 }
 
-.bloco-dois img {
-
-    height: auto;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
-
+figure:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
+
+/* Imagem destacada */
+figure img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+/* Fonte */
+figure figcaption {
+  font-size: 0.8rem;
+  color: #666;
+  padding: 10px 15px 0 15px;
+}
+
+/* Título */
+figure h3 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin: 5px 15px;
+  color: #112244;
+}
+
+/* Texto */
+figure p {
+  font-size: 0.9rem;
+  color: #333;
+  padding: 0 15px 15px 15px;
+  line-height: 1.5;
+}
+
 
 
 /* Media Queries */
-@media (max-width: 450px) {
+@media (max-width: 768px) {
+    .menu {
+        padding: 10px;
+        height: auto;
+    }
+
+    .menu img {
+        height: 60px;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
     .menu ul {
         display: none;
         flex-direction: column;
@@ -117,29 +151,51 @@ li :hover {
         right: 0;
         background-color: #112244;
         width: 100%;
-        
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        transition: all 0.3s ease;
     }
+
     .menu a {
-        font-size: 4vw;
+        font-size: 18px;
+        padding: 15px;
+        display: block;
     }
 
     .menu li {
-        padding: 20px 0;
+        padding: 0;
         text-align: center;
-        border-bottom: 1px solid #ffffff;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     }
-    .button {
-        font-size: 2.5vw;
-        padding: 10px 20px;
-    }
-   
+
     .hamburger {
         display: block;
-        
+        padding: 10px;
     }
 
     #menu-toggle:checked + .hamburger + ul {
         display: flex;
-    
     }
+}
+
+@media (max-width: 450px) {
+    .menu img {
+        height: 50px;
+        margin-left: 2%;
+    }
+
+    .menu a {
+        font-size: 16px;
+    }
+
+    .bloco-um,
+    .bloco-dois {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .noticias {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    
 }

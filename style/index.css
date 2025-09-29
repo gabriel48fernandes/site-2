@@ -363,7 +363,7 @@ details p{
 
     .infos p {
         font-size: 4vw;
-        text-align: left;
+        text-align: center;
         margin-left: 10%;
         margin-right: 10%;
     }
@@ -383,7 +383,7 @@ details p{
     }
     .trajetoria p {
         font-size: 4vw;
-        text-align: left;
+        text-align: center;
         margin-left: 10%;
         margin-right: 10%;
     }
