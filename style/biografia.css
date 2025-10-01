@@ -130,6 +130,11 @@
     padding-bottom: 3%;
     font-size: 1.2vw;
 }
+.dados-gerais ul {
+    list-style-position: inside;
+    padding-left: 0;
+    margin-left: 0;
+}
 
 /* sessão trajeória */
 .trajetoria-politica {
@@ -151,7 +156,7 @@
     margin-left: 10%;
     width: 80%;
     line-height: 1.8;
-    text-align: left;
+    text-align: justify;
 
 
 }
@@ -174,6 +179,7 @@
     color: #f3b46b;
     margin-left: 10%;
     padding-top: 1.5%;
+    font-size: 1.5vw;
 }
 
 #propostas p {
@@ -183,6 +189,7 @@
     margin-left: 10%;
     width: 80%;
     line-height: 1.8;
+    text-align: justify;
 }
 
 /* sessão contato */
@@ -248,8 +255,20 @@ iframe {
     font-style: italic;
 }
 
+iframe {
+    transition: transform 0.3s ease;
+}
+
+iframe:hover {
+    transform: scale(1.02);
+}
+
 
 /* CSS para o footer */
+.line {
+    height: 12px;
+    background-color: #FF7B00;
+}
 .footer_social {
     text-align: center;
     margin-bottom: 2%;
@@ -263,17 +282,19 @@ iframe {
 
 .footer_redes_sociais img {
     width: 2%;
-    margin-top: 2%;
+    margin-top: 1%;
     margin-bottom: 2%;
 }
 
 .footer_social h3 {
     color: #112244;
+    font-size: 1.5vw;
     padding-top: 2%;
 }
 
 .footer_social p {
     color: #112244;
+    font-size: 1vw;
 }
 
 

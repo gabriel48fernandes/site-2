@@ -61,6 +61,39 @@ li :hover {
     color: #FF7B00;
 }
 
+/* CSS para o footer */
+.line {
+    height: 12px;
+    background-color: #FF7B00;
+}
+.footer_social {
+    text-align: center;
+    margin-bottom: 2%;
+}
+
+.footer_redes_sociais {
+    display: flex;
+    justify-content: center;
+    gap: 3%;
+}
+
+.footer_redes_sociais img {
+    width: 2%;
+    margin-top: 1%;
+    margin-bottom: 2%;
+}
+
+.footer_social h3 {
+    color: #112244;
+    font-size: 1.5vw;
+    padding-top: 2%;
+}
+
+.footer_social p {
+    color: #112244;
+    font-size: 1vw;
+}
+
 /* Media Queries */
 @media (max-width: 450px) {
     .menu ul {
