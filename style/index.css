@@ -1,8 +1,8 @@
-*{
-	margin-bottom: 0px;
-	margin-top: 0px;
-	margin-left: 0px;
-	margin-right: 0px;
+* {
+    margin-bottom: 0px;
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
     font-family: "Arsenal", sans-serif;
 }
 
@@ -17,7 +17,7 @@
     color: #fff;
     margin-right: 20px;
     margin-left: auto;
- 
+
 }
 
 .menu {
@@ -28,12 +28,14 @@
     position: relative;
     z-index: 1000;
 }
- .menu img {
+
+.menu img {
     height: 80%;
     margin-left: 10%;
     margin-right: 15%;
-    
+
 }
+
 .menu ul {
     display: flex;
     list-style: none;
@@ -100,12 +102,14 @@ li :hover {
 }
 
 .button {
+    display: inline-block;
     background: #FF7B00;
-    color: #112244;
+    color: #000000;
     padding: 12px 24px;
     border-radius: 4px;
     cursor: pointer;
     font-weight: bold;
+    text-decoration: none;
     transition: 0.3s;
 }
 
@@ -115,7 +119,6 @@ li :hover {
 }
 
 
-/* CSS para a sessão o candidato */
 .candidato {
     display: flex;
 }
@@ -125,9 +128,7 @@ li :hover {
     width: 25%;
     margin-top: 3%;
     margin-left: 10%;
-     border-radius: 15px;
-
-    /* alterei aqui pra aplicar media query */
+    border-radius: 15px;
     order: 1;
 }
 
@@ -138,11 +139,13 @@ li :hover {
     order: 2;
 }
 
-.infos h3, .faixa_esquerda h3 {
+.infos h3,
+.faixa_esquerda h3 {
     color: #FF7B00;
 }
 
-.infos h1, .faixa_esquerda h1 {
+.infos h1,
+.faixa_esquerda h1 {
     color: #112244;
     font-weight: 700;
     font-size: 2vw;
@@ -153,6 +156,8 @@ li :hover {
     font-size: 1.5vw;
     color: #112244;
     line-height: 1.5;
+    text-align: justify;
+  
 }
 
 .faixa_esquerda p {
@@ -166,13 +171,15 @@ li :hover {
 .trajetoria {
     display: flex;
 }
-.trajetoria p{
+
+.trajetoria p {
     font-size: 1.5vw;
     color: #112244;
     line-height: 1.5;
+    text-align: justify;
 }
 
-.faixa_esquerda{
+.faixa_esquerda {
     width: 55%;
     padding-top: 5%;
     padding-left: 10%;
@@ -186,33 +193,29 @@ li :hover {
 }
 
 details {
-  width: 100%; 
-  margin: 1%;
-  border: 2px solid #FF7B00;
-  border-radius: 8px;
-  background-color:white
-
+    width: 100%;
+    margin: 1%;
+    border: 2px solid #FF7B00;
+    border-radius: 8px;
+    background-color: white
 }
 
 summary {
-  cursor: pointer;
-  padding: 12px;
-  background-color: #FF7B00;
-  color: #112244;
-  font-weight: bold;
-  border-bottom: 1px solid #FF7B00;
+    cursor: pointer;
+    padding: 12px;
+    background-color: #FF7B00;
+    color: #112244;
+    font-weight: bold;
+    border-bottom: 1px solid #FF7B00;
+    font-size: 1.2vw;
+
 }
 
 summary:hover {
-  background-color: #112244;
-  color: #ffffff;
+    background-color: #112244;
+    color: #ffffff;
 }
 
-details p{
-  padding: 12px;
-  background-color: #fffaf5;
-  color: #000000;
-}
 
 
 /* CSS para a sessão valores */
@@ -228,6 +231,7 @@ details p{
 
 .valores h3 {
     color: #FF7B00;
+    font-size: 2.5vw;
     padding-bottom: 1%;
 }
 
@@ -252,7 +256,7 @@ details p{
     gap: 3%;
 }
 
-.card { 
+.card {
     flex: 1 1 calc(33.33% - 3%);
     background-color: #ffffff;
     border-radius: 8px;
@@ -276,7 +280,7 @@ details p{
 }
 
 #card_title {
-    color:#112244;
+    color: #112244;
     padding-bottom: 2%;
 }
 
@@ -292,6 +296,10 @@ details p{
 
 
 /* CSS para o footer */
+.line {
+    height: 12px;
+    background-color: #FF7B00;
+}
 .footer_social {
     text-align: center;
     margin-bottom: 2%;
@@ -305,17 +313,19 @@ details p{
 
 .footer_redes_sociais img {
     width: 2%;
-    margin-top: 2%;
+    margin-top: 1%;
     margin-bottom: 2%;
 }
 
 .footer_social h3 {
     color: #112244;
+    font-size: 1.5vw;
     padding-top: 2%;
 }
 
 .footer_social p {
     color: #112244;
+    font-size: 1vw;
 }
 
 /* Media Queries */
@@ -329,6 +339,7 @@ details p{
         background-color: #112244;
         width: 100%;
     }
+
     .menu a {
         font-size: 4vw;
     }
@@ -338,16 +349,17 @@ details p{
         text-align: center;
         border-bottom: 1px solid #ffffff;
     }
+
     .button {
         font-size: 2.5vw;
         padding: 10px 20px;
     }
-   
+
     .hamburger {
         display: block;
     }
 
-    #menu-toggle:checked + .hamburger + ul {
+    #menu-toggle:checked+.hamburger+ul {
         display: flex;
     }
 
@@ -367,8 +379,9 @@ details p{
         margin-left: 10%;
         margin-right: 0%;
     }
+
     .candidato img {
-       width: 50%;
+        width: 50%;
         display: block;
         margin-left: auto;
         margin-right: auto;
@@ -376,11 +389,13 @@ details p{
 
     .trajetoria {
         flex-direction: column;
-        text-align: left; 
+        text-align: left;
     }
+
     .trajetoria h1 {
         font-size: 5vw;
     }
+
     .trajetoria p {
         font-size: 4vw;
         text-align: left;
@@ -388,7 +403,8 @@ details p{
         margin-right: 10%;
     }
 
-    .faixa_esquerda, .accordeons {
+    .faixa_esquerda,
+    .accordeons {
         width: 90%;
         text-align: center;
     }
@@ -397,6 +413,7 @@ details p{
         font-size: 5vw;
         text-align: center;
     }
+
     .faixa_esquerda h3 {
         font-size: 4vw;
         text-align: center;
@@ -409,8 +426,8 @@ details p{
         margin-right: 10%;
     }
 
-    details p{
-      font-size: 3vw;
+    details p {
+        font-size: 3vw;
     }
 
     .valores h1 {
@@ -421,7 +438,7 @@ details p{
         font-size: 3vw;
     }
 
-    .card { 
+    .card {
         flex: 1 1 calc(100% - 3%);
         max-height: none;
     }
