@@ -420,4 +420,27 @@ iframe:hover {
         font-size: 3vw;
     }
 
+  
+    /* Ajuste geral para textos */
+    .trajetoria-politica p,
+    .trajetoria-politica h2,
+    #propostas p,
+    #propostas h2,
+    #propostas h3,
+    .feitos h2,
+    .feitos ol,
+    .valores h2,
+    .valores p,
+    .valores ul,
+    #endereco,
+    iframe {
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%; /* deixa respirar nas laterais */
+        text-align: left; /* ou center, se quiser centralizar títulos */
+    }
+
+    
 }
+
+
