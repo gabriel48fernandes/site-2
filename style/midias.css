@@ -187,7 +187,16 @@ li :hover {
         font-size: 3vw;
     }
 
-    .footer_redes_sociais img {
+     .footer_redes_sociais img {
         width: 5%;
     }
+
+    .footer_social h3 {
+        font-size: 4vw;
+    }
+
+    .footer_social p {
+        font-size: 3vw;
+    }
+
 }

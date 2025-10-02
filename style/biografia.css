@@ -350,13 +350,13 @@ iframe:hover {
      
     }
     .trajetoria-politica h2 {
-        font-size: 5vw;
+        font-size: 4.5vw;
     }
     .trajetoria-politica p {
         font-size: 4vw;
     }
     #propostas h2 {
-        font-size: 5vw;
+        font-size: 4.5vw;
     }
     #propostas h3 {
         font-size: 4vw;
@@ -408,7 +408,16 @@ iframe:hover {
         display: flex;
     }
 
-    .footer_social img {
-        width: 8%;
+     .footer_redes_sociais img {
+        width: 5%;
     }
+
+    .footer_social h3 {
+        font-size: 4vw;
+    }
+
+    .footer_social p {
+        font-size: 3vw;
+    }
+
 }
