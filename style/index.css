@@ -6,6 +6,11 @@
     font-family: "Arsenal", sans-serif;
 }
 
+html, body {
+    width: 100vw;
+    overflow-x: hidden;
+}
+
 #menu-toggle {
     display: none;
 }
