@@ -1,15 +1,10 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
     font-family: "Arsenal", sans-serif;
 }
-
-html, body {
-    width: 100%;
-    overflow-x: hidden;
-}
-
 
 #menu-toggle {
     display: none;
@@ -344,34 +339,6 @@ summary:hover {
         background-color: #112244;
         width: 100%;
     }
-    
-    
-    @media (max-width: 450px) {
-
-    /* Garante que não ultrapassem a tela */
-    .wallpaper img,
-    .candidato img,
-    .faixa_esquerda,
-    .accordeons,
-    .valores,
-    .cards,
-    .card {
-        max-width: 100%;
-    }
-
-    /* Ajusta margens que podem estourar */
-    .infos p,
-    .trajetoria p,
-    .faixa_esquerda p {
-        margin-left: 5%;
-        margin-right: 5%;
-    }
-
-    /* Evita bug do hover expandindo card */
-    .cards :hover {
-        scale: 1.02; /* menos agressivo no mobile */
-    }
-}
 
     .menu a {
         font-size: 4vw;
