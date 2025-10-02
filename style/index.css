@@ -438,6 +438,9 @@ summary:hover {
     .valores h1 {
         font-size: 5vw;
     }
+    .valores h3 {
+        font-size: 4vw;
+    }
 
     .valores p {
         font-size: 3vw;

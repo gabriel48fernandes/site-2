@@ -367,14 +367,21 @@ iframe:hover {
     .feitos h2,
     .valores h2 {
         font-size: 5vw;
+        text-align: center;
+        margin-left: 0;
     }
     .valores p,
     .valores ul {
         font-size: 4vw;
+        margin-left: 0;
+        text-align: center;
+        margin-right: 0;
     }
     .feitos ol {
         font-size: 4vw;
         margin-top: 10px;
+        margin-left: 0;
+        text-align: center;
     }
     .contato p {
         font-size: 3vw;
@@ -420,27 +427,6 @@ iframe:hover {
         font-size: 3vw;
     }
 
-  
-    /* Ajuste geral para textos */
-    .trajetoria-politica p,
-    .trajetoria-politica h2,
-    #propostas p,
-    #propostas h2,
-    #propostas h3,
-    .feitos h2,
-    .feitos ol,
-    .valores h2,
-    .valores p,
-    .valores ul,
-    #endereco,
-    iframe {
-        margin-left: auto;
-        margin-right: auto;
-        width: 90%; /* deixa respirar nas laterais */
-        text-align: left; /* ou center, se quiser centralizar títulos */
-    }
-
     
+
 }
-
-
