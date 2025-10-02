@@ -1,8 +1,7 @@
+/* === CABEÇALHO E MENU === */
 * {
-    margin-bottom: 0px;
-    margin-top: 0px;
-    margin-left: 0px;
-    margin-right: 0px;
+    margin: 0;
+    padding: 0;
     font-family: "Arsenal", sans-serif;
 }
 
@@ -42,10 +41,10 @@
     text-decoration: none;
     color: #ffffff;
     font-weight: 400;
-    font-size: 1.3vw;
+    font-size: 1.3vw; /* mesmo padrão do "mideas" */
 }
 
-li :hover {
+li:hover a {
     color: #FF7B00;
     border-bottom: 3px solid #FF7B00;
     padding-bottom: 20px;
@@ -60,8 +59,6 @@ li :hover {
 #atual {
     color: #FF7B00;
 }
-
-
 
 /* === ESTILO NOTÍCIAS === */
 .noticias {
@@ -81,7 +78,6 @@ li :hover {
     gap: 30px;
 }
 
-/* Cada notícia vira um card */
 figure {
     background: #fff;
     border-radius: 10px;
@@ -98,21 +94,18 @@ figure:hover {
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
 
-/* Imagem destacada */
 figure img {
     width: 100%;
     height: 200px;
     object-fit: cover;
 }
 
-/* Fonte */
 figure figcaption {
     font-size: 0.8rem;
     color: #666;
     padding: 10px 15px 0 15px;
 }
 
-/* Título */
 figure h3 {
     font-size: 1.2rem;
     font-weight: 700;
@@ -120,7 +113,6 @@ figure h3 {
     color: #112244;
 }
 
-/* Texto */
 figure p {
     font-size: 0.9rem;
     color: #333;
@@ -128,15 +120,16 @@ figure p {
     line-height: 1.5;
 }
 
-/* Remove underline from links */
 figure a {
     text-decoration: none;
 }
-/* CSS para o footer */
+
+/* === FOOTER === */
 .line {
     height: 12px;
     background-color: #FF7B00;
 }
+
 .footer_social {
     text-align: center;
     margin-bottom: 2%;
@@ -165,20 +158,8 @@ figure a {
     font-size: 1vw;
 }
 
-
-/* Media Queries */
-@media (max-width: 768px) {
-    .menu {
-        padding: 10px;
-        height: auto;
-    }
-
-    .menu img {
-        height: 60px;
-        margin-left: 5%;
-        margin-right: 5%;
-    }
-
+/* === MEDIA QUERIES === */
+@media (max-width: 450px) {
     .menu ul {
         display: none;
         flex-direction: column;
@@ -187,41 +168,24 @@ figure a {
         right: 0;
         background-color: #112244;
         width: 100%;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        transition: all 0.3s ease;
     }
 
     .menu a {
-        font-size: 18px;
-        padding: 15px;
-        display: block;
+        font-size: 4vw; /* igual "mideas", usa vw em vez de px */
     }
 
     .menu li {
-        padding: 0;
+        padding: 20px 0;
         text-align: center;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        border-bottom: 1px solid #ffffff;
     }
 
     .hamburger {
         display: block;
-        padding: 10px;
     }
 
     #menu-toggle:checked + .hamburger + ul {
         display: flex;
-    }
-}
-
-
-@media (max-width: 450px) {
-    .menu img {
-        height: 50px;
-        margin-left: 2%;
-    }
-
-    .menu a {
-        font-size: 16px;
     }
 
     .bloco-um,
@@ -235,7 +199,7 @@ figure a {
         margin-right: 5%;
     }
 
-     .footer_redes_sociais img {
+    .footer_redes_sociais img {
         width: 5%;
     }
 
@@ -246,6 +210,4 @@ figure a {
     .footer_social p {
         font-size: 3vw;
     }
-
-    
 }
