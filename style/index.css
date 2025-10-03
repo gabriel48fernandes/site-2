@@ -376,7 +376,7 @@ summary:hover {
 
     .infos p {
         font-size: 4vw;
-        padding-left: 10px;
+        padding-left: 15px;
        
     }
 
@@ -414,6 +414,7 @@ summary:hover {
   
     .accordeons {
         width: 85%;
+        padding-right: 25px;
         text-align: center;
     }
 
