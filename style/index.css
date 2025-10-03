@@ -331,148 +331,166 @@ summary:hover {
 
 /* Media Queries */
 @media (max-width: 450px) {
-    .menu ul {
-        display: none;
-        flex-direction: column;
-        position: absolute;
-        top: 100%;
-        right: 0;
-        background-color: #112244;
-        width: 100%;
-    }
+  /* Saneamento para evitar que algo "puxe" a largura da viewport */
+  *, *::before, *::after { box-sizing: border-box; }
+  html, body { width: 100%; max-width: 100%; }
 
-    .menu a {
-        font-size: 4vw;
-    }
+  /* Garante que containers flex não forcem overflow */
+  .menu, .wallpaper, .valores, .cards, .candidato, .faixa_esquerda, .accordeons, .trajetoria, .infos, .footer_social {
+    max-width: 100%;
+    min-width: 0;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0;
+    padding-right: 0;
+  }
 
-    .menu li {
-        padding: 20px 0;
-        text-align: center;
-        border-bottom: 1px solid #ffffff;
-    }
+  /* --- Menu responsivo --- */
+  .menu {
+    height: auto;
+    padding: 10px 12px;
+    align-items: center;
+  }
 
-    .button {
-        font-size: 2.5vw;
-        padding: 10px 20px;
-    }
+  .hamburger {
+    display: block;
+    font-size: 24px;
+    cursor: pointer;
+    color: #fff;
+    margin-left: auto;
+    background: transparent;
+    border: none;
+  }
 
-    .hamburger {
-        display: block;
-    }
+  /* menu drop-down ocupa 100% da viewport e usa left:0 para evitar deslocamento */
+  .menu ul {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    background-color: #112244;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
 
-    #menu-toggle:checked+.hamburger+ul {
-        display: flex;
-    }
+  /* sobrescreve padding grande (ex.: padding-right:25% do CSS base) */
+  .menu li {
+    padding: 12px 16px;
+    text-align: center;
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+    width: 100%;
+    box-sizing: border-box;
+  }
 
-    .candidato {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
+  .menu a {
+    display: block;
+    font-size: 4.2vw;
+    padding: 0;
+    color: #fff;
+    text-decoration: none;
+    word-break: break-word;
+  }
 
-    .infos h1 {
-        font-size: 5vw;
-    }
+  #menu-toggle:checked + .hamburger + ul {
+    display: flex;
+  }
 
-    .infos p {
-        font-size: 4vw;
-        text-align: justify;
-        margin-left: 10%;
-        margin-right: 0%;
-    }
+  /* --- Wallpaper / hero --- */
+  .wallpaper img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
 
-    .candidato img {
-        width: 50%;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-    }
+  /* --- Candidato (imagem + infos) --- */
+  .candidato {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 12px;
+    padding: 12px 6%;
+  }
 
-    .trajetoria {
-        flex-direction: column;
-        text-align: left;
-    }
+  .candidato img {
+    width: 60%;
+    max-width: 260px;
+    height: auto;
+    margin: 0;
+    display: block;
+    border-radius: 15px;
+    order: 1;
+  }
 
-    .trajetoria h1 {
-        font-size: 5vw;
-    }
+  .infos {
+    order: 2;
+    width: 100%;
+    padding: 0 6%;
+    margin: 6px 0;
+  }
 
-    .trajetoria p {
-        font-size: 4vw;
-        text-align: left;
-        margin-left: 10%;
-        margin-right: 10%;
-    }
+  .infos h1 { font-size: 5.2vw; margin: 0 0 8px 0; }
+  .infos p { font-size: 4.2vw; text-align: justify; margin: 0; }
 
-    .faixa_esquerda,
-    .accordeons {
-        width: 90%;
-        text-align: center;
-        flex: 1;
-        min-width: 0;
-    }
+  /* --- Trajetória --- */
+  .trajetoria {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 12px 6%;
+    text-align: left;
+  }
 
-    .faixa_esquerda h1 {
-        font-size: 5vw;
-        text-align: center;
-    }
+  .trajetoria h1 { font-size: 5.2vw; margin: 0; }
+  .trajetoria p { font-size: 4vw; margin: 0; }
 
-    .faixa_esquerda h3 {
-        font-size: 4vw;
-        text-align: center;
-    }
+  /* --- Faixa esquerda e acordeons --- */
+  .faixa_esquerda,
+  .accordeons {
+    width: 100%;
+    padding: 12px 6%;
+    min-width: 0;
+    text-align: center;
+  }
 
-    .faixa_esquerda p {
-        font-size: 4vw;
-        text-align: justify;
-        margin-left: 0%;
-        margin-right: 10%;
-    }
+  .faixa_esquerda h1,
+  .faixa_esquerda h3 { font-size: 5vw; margin: 0; }
+  .faixa_esquerda p { font-size: 4vw; text-align: justify; margin: 0; }
 
-    .accordeons summary {
-        font-size: 3vw;
-        text-align: justify;
-    }
+  .accordeons summary {
+    font-size: 3.6vw;
+    text-align: left;
+    padding: 10px;
+  }
 
-    details p {
-        font-size: 3vw;
-    }
+  details p { font-size: 3.6vw; margin: 0; padding: 12px 6%; }
 
-    .valores h1 {
-        font-size: 5vw;
-    }
+  /* --- Valores e cards --- */
+  .valores { padding: 20px 6% 32px 6%; }
+  .valores h1 { font-size: 5vw; margin: 0 0 8px 0; }
+  .valores h3 { font-size: 4vw; margin: 0 0 8px 0; }
+  .valores p { font-size: 3.4vw; width: 100%; margin: 0 auto; }
 
-    .valores h3 {
-        font-size: 4vw;
-    }
+  .cards { display: flex; flex-direction: column; width: 92%; gap: 12px; margin: 12px auto; padding: 0; }
+  .card { flex: 1 1 100%; width: 100%; max-height: none; padding: 12px; box-sizing: border-box; }
 
-    .valores p {
-        font-size: 3vw;
-    }
+  #card_title { font-size: 4vw; }
+  #card_paragraph { font-size: 3.6vw; }
 
-    .card {
-        flex: 1 1 calc(100% - 3%);
-        max-height: none;
-    }
+  /* --- Footer --- */
+  .footer_redes_sociais { justify-content: center; }
+  .footer_redes_sociais img { width: 36px; height: auto; margin: 0 8px; }
 
-    #card_title {
-        font-size: 4vw;
-    }
+  .footer_social h3 { font-size: 4vw; margin: 12px 0 6px 0; }
+  .footer_social p { font-size: 3.2vw; margin: 0 0 12px 0; }
 
-    #card_paragraph {
-        font-size: 3vw;
-    }
-
-    .footer_redes_sociais img {
-        width: 5%;
-    }
-
-    .footer_social h3 {
-        font-size: 4vw;
-    }
-
-    .footer_social p {
-        font-size: 3vw;
-    }
-
+  /* --- Segurança extra: evita que conteúdo não quebrável estoure a viewport --- */
+  body, p, h1, h2, h3, a, li, summary {
+    word-break: break-word;
+    overflow-wrap: break-word;
+  }
 }
