@@ -192,6 +192,15 @@ li :hover {
     padding-top: 5%;
 }
 
+.accordeons p {
+    font-size: 1vw;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: #112244;
+    line-height: 1.5;
+    text-align: justify;
+}
+
 details {
     width: 100%;
     margin: 1%;
@@ -207,7 +216,7 @@ summary {
     color: #112244;
     font-weight: bold;
     border-bottom: 1px solid #FF7B00;
-    font-size: 1.2vw;
+    font-size: 1vw;
 
 }
 
