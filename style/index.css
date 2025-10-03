@@ -376,9 +376,8 @@ summary:hover {
 
     .infos p {
         font-size: 4vw;
-        text-align: justify;
-        margin-left: 10%;
-        margin-right: 0%;
+        padding-left: 10px;
+       
     }
 
     .candidato img {
