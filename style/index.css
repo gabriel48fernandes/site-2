@@ -348,6 +348,7 @@ summary:hover {
         padding: 20px 0;
         text-align: center;
         border-bottom: 1px solid #ffffff;
+        padding-right: 0;
     }
 
     .button {
@@ -470,5 +471,6 @@ summary:hover {
     .footer_social p {
         font-size: 3vw;
     }
+    
 
 }
